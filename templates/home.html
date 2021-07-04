@@ -1,0 +1,29 @@
+<!--home.html-->
+<!--動作確認用ホーム画面表示HTML-->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>課題リマインダー</title>
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<h1>ホーム画面</h1>
+<form action="/EditTask" method="POST">
+    <p>優先
+        &emsp;
+        課題名
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        期日
+        &emsp;&emsp;
+        &emsp;&emsp;
+        優先度</p>
+    <p>&emsp;&emsp;<input type="submit" value="{{task_name}}">
+        &emsp;&emsp;
+        {{deadline}}
+        &emsp;&emsp;
+        {{priority}}</p>
+</form>
+</body>
+</html>

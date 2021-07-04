@@ -1,0 +1,44 @@
+<!--EditTask.html-->
+<!--C1 UI処理部-->
+<!--M3 課題編集処理-->
+<!--W4課題編集画面より課題情報を読み取り，そのデータをサーバへ出す．-->
+
+<!--1.W4課題編集画面表示HTML-->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>課題の編集・削除</title>
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<center>
+<h1>課題の編集・削除</h1>
+<form action="/DoneEdit" method="POST">
+    <div style="line-height:0;" ><font size="2" color="red">{{error1}}</font>  <!--task_name-->
+    <p>課題名:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp; <!--空白調整-->
+        <input type="text" name="task_name" value="{{task_name}}" placeholder="課題名(20文字以内)">
+        &emsp;</p></div>
+    
+    <div style="line-height:0;" ><font size="2" color="red">{{error2}}</font> <!--deadline-->
+    <p>期日：&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&thinsp;&thinsp; <!--空白調整-->
+        <input type="text" name="deadline" value="{{deadline}}" placeholder="MM月DD日HH時mm分">
+        &emsp;</p></div>
+
+    <div style="line-height:0;" ><font size="2" color="red">{{error3}}</font> <!--importance-->
+    <p>重要度(0-100で設定)：
+        <input type="text" name="importance" value="{{importance}}" placeholder="重要度(0-100で設定)">
+        &emsp;</p></div>
+
+    <div style="line-height:0;" ><font size="2" color="red">{{error4}}</font> <!--notice_time-->
+    <p>通知が届く日時：&emsp;&emsp;&nbsp;&nbsp;&thinsp; <!--空白調整-->
+        <input type="text" name="notice_time" value="{{notice_time}}" placeholder="MM月DD日HH時mm分">
+        &emsp;</p></div>
+
+    <p><input type="submit" name="send" value="登録">
+        &emsp;&emsp;
+        <input type="submit" name="send" value="削除"></p>
+</center>
+</form>
+</body>
+</html>
