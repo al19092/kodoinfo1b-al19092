@@ -1,0 +1,21 @@
+<!--DoneDelete.html-->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>削除完了</title>
+</head>
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<h1>削除完了</h1>
+<p>課題の削除が完了しました</p>
+<p>課題名:{{ task_name }}</p>
+<p>課題の期日:{{ deadline }}</p>
+<p>課題の優先度:{{ priority }}</p>
+<p>通知が届く日時:{{ notice_time }}</p>
+<form action="/" method="POST">
+<p><input type="submit" name="send" value="ホーム画面に戻る"></p>
+</form>
+</body>
+</html>
