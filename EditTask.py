@@ -1,6 +1,6 @@
 """
 *******************************************
-*** File Name :EditTask2.py
+*** File Name :EditTask.py
 *** Version   :V1.0
 *** Designer  :城谷拓身
 *** Date      :2021.07.04
